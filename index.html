@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration </title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    function wrapper() {
+
+            let firstName = document.getElementById("first-name").value;
+            let lastName= document.getElementById("last-name").value;
+            let fullName= `${firstName} ${lastName}`;
+            console.log(fullName);
+            alert("!Congratulations "+fullName+ "you are now signed up");
+    }
+</script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Enter your First name" id="first-name" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Last name" id="last-name" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Organization" required>
+      </div>
+      <div class="input-box">
+        <input type="email" placeholder="Enter your Email" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Work Phone" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Home Phone" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Fax" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Address 1" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Address 2" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your City" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Zip State Province" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Zip Postal Code" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your Country" required>
+      </div>
+
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+     <button onclick="wrapper()">Register Now</button> 
+    </form>
+  </div>
+</body>
+</html>
